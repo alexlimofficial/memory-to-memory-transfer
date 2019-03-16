@@ -15,12 +15,13 @@ dff uut (.DOut2(DOut2),
 /* Verification vectors here */
 initial
 begin
-    d = 8'b00000000; clock = 1;
-#5  d = 8'b11111111; clock = 0;
-#5  d = 8'b11111111; clock = 1; 
-#5  d = 8'b11111111; clock = 0; 
-#5  d = 8'b01010101; clock = 1;
-#5  d = 8'b01010101; clock = 0;
+    DOut1 = 8'b00000000; clock = 1;
+#5  DOut1 = 8'b11111111; clock = 0;
+#5  DOut1 = 8'b11111111; clock = 1; 
+#5  DOut1 = 8'b11111111; clock = 0; 
+#5  DOut1 = 8'b01010101; clock = 1;
+#5  DOut1 = 8'b01010101; clock = 0;
 end
 
 endmodule
+
