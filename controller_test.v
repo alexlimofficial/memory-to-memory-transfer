@@ -21,8 +21,8 @@ controller uut (.clock(clock),
 /* Verification vectors here */
 initial
 begin
-    clock = 1'b0; Reset = 1'b1;
-#4                Reset = 1'b0;
+    clock = 1'b1; Reset = 1'b1;
+#2                Reset = 1'b0;
 end
 
 always #2 clock = ~clock;

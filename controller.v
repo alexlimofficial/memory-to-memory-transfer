@@ -11,8 +11,8 @@ reg [4:0] ps;
 reg [4:0] ns;
 
 always @ (posedge clock or posedge Reset)
-begin
-    ps = ns; /* Move to the next state */
+begin  
+    ps = ns;
     if(Reset)
     begin
         IncA <= 1'b0;
@@ -21,15 +21,17 @@ begin
         WEB <= 1'b0;
         ns <= 5'b00000;
     end
-    
+
     /* Reset = 0, continue with state machine logic */
     else
     begin
         case(ps)
             5'b00000:
             begin
-                IncA <= 1'b1;
-                WEA <= 1'b1;
+                IncA <= 1'b0;
+                IncB <= 1'b0;
+                WEA <= 1'b0;
+                WEB <= 1'b0;
                 ns <= 5'b00001;
             end
             
@@ -65,7 +67,7 @@ begin
             begin
                 IncA <= 1'b1;
                 WEA <= 1'b1;
-                ns <= 5'd00110;
+                ns <= 5'b00110;
             end
 
             5'b00110:

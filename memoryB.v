@@ -19,7 +19,7 @@ begin
         memB[AddrB] <= DataInB;
     end
 
-    /* For verification purposes, this datapath is not included in design */
+    /* For verification purposes only. This datapath is not included in design */
     else
     begin
         DOutB <= memB[AddrB];
