@@ -12,7 +12,7 @@ The design implements a memory-to-memory transfer of 8-bit data packets between 
 
 Memory A is a 8x8 memory block which can store eight 8-bit data packets. Data is written to the memory through DataInA[7:0] and read through DOut1[7:0]. 
 
-### Memory 
+### Memory B
 
 Memory B is a 8x4 memory block which can store four 8-bit data packets. Data is written to the memory through DataInB[7:0], the output of the 2-to-1 MUX. 
 
