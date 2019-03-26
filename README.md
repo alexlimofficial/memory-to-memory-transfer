@@ -6,7 +6,7 @@ A simple memory-to-memory transfer designed in Verilog.
 
 ## Theory
 
-The design implements a memory-to-memory transfer of 8-bit data packets between a 8x8 source memory (Memory A) to a 8x4 target memory (Memory B. 
+The design implements a memory-to-memory transfer of 8-bit data packets between a 8x8 source memory (Memory A) to a 8x4 target memory (Memory B). This starts by the the writing of eight 8-bit data packets into Memory A. Afterwards, the data is read one data packet at a time from Memory A and passed through to the processing step. This processing step compares two consecutive data packets (exclusively; no data packet can be compared twice) and either subtracts them from each other or adds them and writes the result into Memory B. Essentially, the compared data packets will be A0/A1, A2/A3, A4/A5, and A6/A7. 
 
 ### Memory A
 
