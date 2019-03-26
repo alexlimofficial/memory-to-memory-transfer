@@ -2,7 +2,7 @@
 
 A simple memory-to-memory transfer designed in Verilog. 
 
-![Block Diagram]('img/block-diagram.jpg')
+![Block Diagram](img/block-diagram.jpg)
 
 ## Theory
 
@@ -44,11 +44,11 @@ The design was broken up into separate modules and individually verified through
 
 The timing diagram of the final system is shown below.
 
-![Timing Diagram]('img/timing-diagram.png')
+![Timing Diagram](img/timing-diagram.png)
 
 The Moore-type state machine is shown below.
 
-![Moore Machine]('img/state-machine.jpg')
+![Moore Machine](img/state-machine.jpg)
 
 ## References
 
